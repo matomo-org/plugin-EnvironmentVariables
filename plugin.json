@@ -1,7 +1,7 @@
 {
     "name": "EnvironmentVariables",
     "description": "Allows you to specify Matomo config in environment variables instead of the config file.",
-    "version": "0.1.0",
+    "version": "3.0.0",
     "theme": false,
     "require": {
         "piwik": ">=3.6.1-stable,<4.0.0-b1"
