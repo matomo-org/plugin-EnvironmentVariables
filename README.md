@@ -26,4 +26,5 @@ export MATOMO_DATABASE_PASSWORD=secure
 ### Known issues:
 * Configuration arrays are currently not supported, for example you cannot define which `Plugins[]` should be loaded.
 * At some point your Matomo may save/write the config file, for example when changing certain settings through the UI such as the trusted hosts. In this case, the currently read environment variables will be saved in the config file.
+* If this plugin is used with PHP-FPM, for example in combination with NGINX, PHP-FPM will not have access to the environment variables by default. The pool used by PHP-FPM must either explicit define which ENVs should be exposed, or set `clear_env = no` in `/etc/php7/php-fpm.f/<pool>.conf`.
 
