@@ -8,7 +8,7 @@
  */
 
 return array(
-    'Piwik\Config' => DI\decorate(function ($previous, \Interop\Container\ContainerInterface $c) {
+    'Piwik\Config' => DI\decorate(function ($previous, \Psr\Container\ContainerInterface $c) {
         $settings = $c->get(\Piwik\Application\Kernel\GlobalSettingsProvider::class);
 
         $ini = $settings->getIniFileChain();
