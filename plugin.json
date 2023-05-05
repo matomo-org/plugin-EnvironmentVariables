@@ -1,10 +1,10 @@
 {
     "name": "EnvironmentVariables",
     "description": "Allows you to specify Matomo config in environment variables instead of the config file.",
-    "version": "4.0.1",
+    "version": "5.0.0",
     "theme": false,
     "require": {
-        "matomo": ">=4.0.0-b1,<5.0.0-b1"
+        "matomo": ">=5.0.0-b1,<6.0.0-b1"
     },
     "authors": [
         {

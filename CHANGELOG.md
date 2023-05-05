@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.0.0
+- Compatibility with Matomo 5
+
 ### 4.0.1
 - Compatibility with PHP DI 6
 
