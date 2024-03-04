@@ -20,5 +20,6 @@
     },
     "homepage": "https://matomo.org",
     "license": "GPL v3+",
-    "keywords": ["php", "environment", "variables", "configuration"]
+    "keywords": ["php", "environment", "variables", "configuration"],
+    "category": "database"
 }
