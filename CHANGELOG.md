@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.0.2 - 2024-10-21
+- Documentation updated to hard code config
+
 ### 5.0.1
 -  Added plugin category for Marketplace
 
