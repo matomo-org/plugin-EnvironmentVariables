@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.0.3 - 2025-01-20
+- Added missing license file
+
 ### 5.0.2 - 2024-10-21
 - Documentation updated to hard code config
 
