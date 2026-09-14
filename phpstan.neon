@@ -1,0 +1,20 @@
+parameters:
+    level: 5
+    phpVersion: 80100
+    tmpDir: /tmp/phpstan/EnvironmentVariables/main
+    paths:
+        - .
+    excludePaths:
+        analyseAndScan:
+            - tests/*
+            # The shared workflow leaves this helper checkout in the workspace, and `paths: .`
+            # would otherwise analyse it as if it were plugin code.
+            - github-action-tests/*
+    bootstrapFiles:
+        - ../../bootstrap-phpstan.php
+    universalObjectCratesClasses:
+        - Piwik\Config
+        - Piwik\View
+        - Piwik\ViewDataTable\Config
+    scanDirectories:
+        - ../../
