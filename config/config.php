@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -16,7 +17,7 @@ return [
         foreach ($all as $category => $settings) {
             $categoryEnvName = 'MATOMO_' . strtoupper($category);
             foreach ($settings as $settingName => $value) {
-                $settingEnvName  = $categoryEnvName . '_' .strtoupper($settingName);
+                $settingEnvName  = $categoryEnvName . '_' . strtoupper($settingName);
 
                 $envValue = getenv($settingEnvName);
                 if ($envValue !== false) {
