@@ -21,8 +21,14 @@ return [
 
                 $envValue = getenv($settingEnvName);
                 if ($envValue !== false) {
+                    try {
+                        $settingValue = json_decode($envValue, true, 512, \JSON_THROW_ON_ERROR);
+                    } catch (\JsonException $e) {
+                        $settingValue = $envValue;
+                    }
+
                     $general = $previous->$category;
-                    $general[$settingName] = $envValue;
+                    $general[$settingName] = $settingValue;
                     $previous->$category = $general;
                 }
             }
