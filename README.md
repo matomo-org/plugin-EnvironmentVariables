@@ -29,7 +29,7 @@ List values can be set via encoded JSON arrays:
 export MATOMO_GENERAL_TRUSTED_HOSTS='["1.2.3.4","5.6.7.8"]'
 ```
 
-Any other type of value is used literally. The same applies to JSON values which fail to decode.
+JSON objects are decoded too, into keyed arrays. Any other value, including JSON that fails to decode, is used literally.
 
 ### Known issues:
 

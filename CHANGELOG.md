@@ -1,7 +1,7 @@
 ## Changelog
 
-### 6.0.1 - 2026-10-06
-- Support list configuration values via JSON arrays, e.g. for `trusted_hosts` via `MATOMO_GENERAL_TRUSTED_HOSTS=["example.com","example.net"]`
+### 6.0.1 - 2026-10-12
+- Support list configuration values via JSON arrays (JSON objects are decoded too), e.g. for `trusted_hosts` via `MATOMO_GENERAL_TRUSTED_HOSTS=["example.com","example.net"]`
 
 ### 6.0.0 - 2026-08-10
 - Compatibility with Matomo 6
