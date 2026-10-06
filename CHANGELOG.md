@@ -1,5 +1,8 @@
 ## Changelog
 
+### 5.0.4 - 2026-10-19
+- Support list configuration values via JSON arrays, e.g. for `trusted_hosts` via `MATOMO_GENERAL_TRUSTED_HOSTS=["example.com","example.net"]`
+
 ### 5.0.3 - 2025-01-20
 - Added missing license file
 
